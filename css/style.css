@@ -1,0 +1,629 @@
+@font-face {
+	font-family: 'TimesNewRomanPSMT';
+	font-display: swap;
+	src: url("../fonts/файл шрифта.eot");
+	src: local("O"), url("../fonts/файл шрифта.woff") format("woff"),
+		url("../fonts/timesnewromanpsmt.ttf") format("truetype"),
+
+
+}
+
+@font-face {
+	font-family: 'TimesNewRomanPS';
+	font-display: swap;
+	src: url("../fonts/файл шрифта.eot");
+	src: local("O"), url("../fonts/TimesNewRomanPS-BoldMT.otf") format("truetype"),
+		url("../fonts/TimesNewRomanPS-BoldMT.ttf") format("truetype"),
+		url("../fonts/TimesNewRomanPS-BoldMT.otf") format("truetype"),
+		font-weight: normal;
+	font-style: normal;
+}
+
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 0.875rem;
+	line-height: 122.222222%;
+	font-family: 'PTSans';
+	margin: 0;
+	font-style: normal;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #000000;
+	background: #FFFFFF;
+
+}
+
+/* font-family: 'TimesNewRomanPS';
+   font-family: 'PTSans';
+	font-family: 'Tinos';
+	font-family: 'TimesNewRomanPSMT';
+	font-family: 'TimesNewRomanPS';
+ */
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* ul li {
+	list-style: none;
+} */
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/************************************container********************************************/
+.none {
+	display: none;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	
+	margin: 0px auto;
+}
+
+/* .container {
+	max-width: 1310px;
+	margin: 0px auto;
+	padding: 0px 15px;
+} */
+[class*="__container"] {
+	max-width: 72.125rem;
+	margin: 0 auto;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.btn-nav {
+
+	border: none;
+	padding: 0 10px;
+	background: #5BD077;
+	height: 50px;
+	margin-top: 5px;
+	align-items: center;
+	transition: opacity 0.2s ease-in;
+}
+
+.btn-nav:hover {
+	-webkit-transform: scale(1.03);
+	transform: scale(1.03);
+}
+
+
+.btn-nav:active {
+	-webkit-transform: translateY(5px) scale(1.03);
+	transform: translateY(5px) scale(1.03);
+	box-shadow: 0 0 0 #6c6297, 0 0.875rem 1.5rem rgba(76, 62, 109, 0.42)
+}
+
+.title {
+	font-weight: 600;
+	font-size: 2.5rem;
+	line-height: 125%;
+	/* 50/40 */
+	text-transform: uppercase;
+}
+
+.text {
+
+	font-size: 1.125rem;
+	font-family: 'TimesNewRomanPSMT';
+	color: rgb(76, 76, 76);
+	line-height: 1.333;
+	
+}
+
+/* li::marker {
+	color: #FFFFFF;
+} */
+
+/******************************header***************************************************/
+
+.menu__link {
+
+	font-size: 20px;
+	color: #505050;
+	line-height: 100%;
+	/* 20px/20 */
+
+	display: flex;
+	align-items: center;
+	text-align: right;
+
+}
+
+@media (max-width: 479.9808px) {
+	.navbar-light .navbar-brand {
+		width: 205px;
+	}
+}
+
+
+/*******************************hygiene*********/
+.ckr__hygiene {
+	background-image: url(/img/main/titul/Sl\ 1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+} 
+
+
+.ckr__hygiene-title {
+	
+	padding: 280px 0px 0px 0px;
+	font-size: 38px;
+	line-height: 78.947368%;
+	/* 30px/38 */
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+.hygiene__item {
+	padding: 10px 0px 15px 15px;
+}
+
+.hygiene__items::marker {
+	color: #FFFFFF;
+}
+
+.hygiene__items p {
+	font-size: 14px;
+	line-height: 78.947368%;
+	/* 30px/38 */
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+
+/***************************************services**********/
+
+.ckr__services-title {
+	padding: 20px 0px 0px 0px;
+	font-size: 22px;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.3;
+
+}
+
+.ckr__services-text {
+	padding: 10px 30px;
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.3;
+}
+/*******************************************lorem******/
+.lorem {
+	margin: 90px 0px 0px 0px;
+}
+
+
+
+.lorem__text {
+	max-width: 65%;
+	padding: 3px 0px 0px 10px;
+}
+
+.lorem__image {
+	margin: 0px 40px 0px 0px;
+}
+
+.lorem__image-title {
+	
+	font-size: 22px;
+	color: rgb(76, 76, 76);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+/*********************************************************advantages**/
+.advantages {
+	margin: 80px 0px 0px 0px;
+	background-color: #E0F0FF;
+}
+
+.advantages__title {
+	font-size: 30px;
+	line-height: 80%;
+	/* 24px/30 */
+	color: #5A6D7F;
+}
+
+.advantages__content {
+	margin: 50px 10px 0px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap;
+
+}
+
+.advantages__inner {
+	text-align: center;
+}
+
+.advantages__inner-icon {
+	width: 80px;
+	height: 80px;
+}
+
+.advantages__inner-text {
+	font-size: 16px;
+	line-height: 133.333333%;
+	/* 24px/18 */
+	color: #5A6D7F;
+}
+
+/
+
+/*---------------------*/
+.reviews {
+	margin: 80px 0px 0px 0px;
+}
+
+.reviews__title {
+	font-size: 30px;
+	line-height: 80%;
+	/* 24px/30 */
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: #505050;
+}
+
+
+
+.slider__item {
+	width: 431px;
+	height: 245px;
+	border: 1px solid #CCCCCC;
+}
+
+.ckr__reviews-text {
+	font-size: 18px;
+	line-height: 133.333333%;
+	/* 24px/18 */
+	color: #797979;
+	padding:20px;
+}
+
+.ckr__reviews-name {
+
+	font-size: 18px;
+	line-height: 111.111111%;
+	/* 20px/18 */
+	color: #4C4C4C;
+	margin-top: auto;
+}
+.ckr__fa-left{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 22px;
+	left: 0px;
+	font-size: 18px;
+	line-height: 133.333333%;
+	/* 24px/18 */
+	color: #797979;
+
+}
+.ckr__fa-right{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	bottom: 28px;
+	right: -283px;
+	font-size: 18px;
+	line-height: 133.333333%;
+	/* 24px/18 */
+	color: #797979;
+
+}
+.carousel-control-prev-icon {
+	
+	left: -55px;
+	position: relative;
+	background-color: #000;
+	border-radius: 50%;
+}
+.carousel-control-next-icon {
+	position: relative;
+	background-color: #000;
+	border-radius: 50%;
+	right: -50px;
+}
+
+
+
+
+
+
+.reviews__button {
+	
+	display: flex;
+	justify-content: center;
+	margin: 20px auto 0px;
+}
+
+.reviews__button a {
+	padding: 12px 21px 11px 23px;
+	font-size: 16px;
+	line-height: 150%;
+	/* 24px/16 */
+	text-align: center;
+	color: #5A6D7F;
+	background: rgba(0, 0, 0, 0.0001);
+	border: 1px solid #5A6D7F;
+	border-radius: 5px;
+}
+
+/*************************/
+@media (max-width: 479.9808px) {
+	.ckr__reviews-text {
+		font-size: 14px;
+	}
+	.carousel-item{
+		width: 270px;
+	}
+	.carousel-control-prev-icon {
+		left: 5px;
+	}
+	.carousel-control-next-icon {
+		right: 5px;
+	}
+}
+
+/*********************************************form******************/
+
+input {
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+}
+
+.textarea {
+	width: 100%;
+	max-width: 585px;
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+	font-size: 18px;
+	line-height: 22px;
+	/* identical to box height, or 122% */
+	color: #A0A0A0;
+}
+
+.contact-form {
+
+	margin: 100px 0px 0px 0px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edfce0+0,a0d4d6+100 */
+background: #edfce0; /* Old browsers */
+background: -moz-linear-gradient(left,  #edfce0 0%, #a0d4d6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #edfce0 0%,#a0d4d6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #edfce0 0%,#a0d4d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edfce0', endColorstr='#a0d4d6',GradientType=1 ); /* IE6-9 */
+
+}
+
+.contact-form__title {
+	padding: 20px 0px 0px 0px;
+	font-size: 30px;
+	line-height: 80%;
+	/* 24px/30 */
+	color: rgba(83,159,165,0.8);
+}
+
+
+.content-title__input {
+	/* position: relative; */
+	width: 270px;
+	margin: 0px 0px 0px 10px;
+	padding: 12px 27px 11px 34px;
+	font-size: 18px;
+	line-height: 166.666667%;
+	/* 30px/18 */
+	align-items: center;
+	color: #A0A0A0;
+}
+/* 
+.contact-form__text {
+	max-width: 35%;
+
+} */
+
+.ckr__form-text {
+	font-size: 16px;
+	line-height: 125%;
+	/* 20px/16 */
+
+	color: #428397;
+}
+
+.contact-form__button {
+	margin: 20px auto 0px;
+	padding: 10px 21px 8px 21px;
+	display: block;
+	background-color: #52ceaa;
+	font-size: 20px;
+	line-height: 150%;
+	/* 30px/20 */
+	
+	border-radius: 5px;
+} 
+.contact-form__button a {
+	color: #FFFFFF;
+} 
+.ckr__icon{
+	display: flex;
+	position: relative;
+	
+}
+.input-group-addon{
+	position: absolute;
+	top: 15px;
+	left: 30px;
+
+	color: #52ceaa;
+	
+} 
+
+.contact-form__content{
+	max-width: 585px;
+	margin: 0 auto;
+	transform: translateX(-25px);
+}
+/******************************************************footer ********/
+.footer {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5acd7a+0,4e85be+100 */
+background: #5acd7a; /* Old browsers */
+background: -moz-linear-gradient(left,  #5acd7a 0%, #4e85be 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #5acd7a 0%,#4e85be 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #5acd7a 0%,#4e85be 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5acd7a', endColorstr='#4e85be',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+
+.nav-link {
+	padding: 10px 0px 10px 0px;
+	font-size: 16px;
+	line-height: 125%;
+	/* 20px/16 */
+
+	color: #FFFFFF !important;
+}
+
+
+.footer__span-line {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #FFFFFF;
+}
+
+/* .footer__inner {
+	padding: 10px 0px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+} */
+
+.footer__inner-name {
+	width: 207px;
+	font-family: 'TimesNewRomanPSMT';
+	font-size: 14px;
+	line-height: 128.571429%;
+	/* 18px/14 */
+	align-items: center;
+	color: #FFFFFF;
+}
+
+/* .footer__inner-logo {
+	width: 247px;
+
+	display: flex;
+	align-items: center;
+	gap: 15px;
+} */
+
+.footer__inner-text {
+	font-size: 12px;
+	line-height: 116.666667%;
+	/* 14px/12 */
+	color: #FFFFFF;
+}
+.ckr__text{
+	position: relative;
+	font-size: 8px;
+	top: -4px;
+	
+}
+
+/*******************************GIT*********************************************************/
+
+/* git push origin master    git add .    git remote add origin https://github.com/CKRoMA/git-course.git*/
+/* git commit -a -m "Commit message." git push -u origin master */
+/*******************************************************************************************/

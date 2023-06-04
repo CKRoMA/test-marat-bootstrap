@@ -1,0 +1,8 @@
+PTSans Regular
+PTSans Bold
+PTSans Italic
+
+Tinos Bold
+
+TimesNewRomanPS BoldMT
+TimesNewRomanPSMT Regular
